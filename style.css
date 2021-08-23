@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+body .sidebar {
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .sidebar a {
+  margin-bottom: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .sidebar a img {
+  max-width: 30px;
+}
+
+body nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+body nav img {
+  cursor: pointer;
+  max-width: 80px;
+}
+
+body nav .nav-links {
+  width: 100%;
+}
+
+body nav .nav-links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body nav .nav-links ul li a {
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body nav .nav-links ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+body main {
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+body main .info {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 40px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+body main .projects {
+  margin-top: 200px;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .projects .cards {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .projects .cards .card {
+  margin-left: 40px;
+  margin-right: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+body main .projects .cards .card a {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+body main .projects .cards .card img {
+  margin: 0;
+  max-width: 300px;
+}
+
+body main .projects .cards .card:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+body main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .contact ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
