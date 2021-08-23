@@ -120,16 +120,16 @@ body {
           padding: 0;
           margin-bottom: 40px;
 
-          a {
+          &:nth-child(1) a {
             margin: 0;
             color: white;
             text-decoration: none;
             text-align: center;
-          }
 
-          img {
-            margin: 0;
-            max-width: 300px;
+            img {
+              margin: 0;
+              max-width: 300px;
+            }
           }
 
           &:hover {
