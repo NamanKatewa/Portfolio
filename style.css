@@ -154,14 +154,14 @@ body main .projects .cards .card {
   margin-bottom: 40px;
 }
 
-body main .projects .cards .card a {
+body main .projects .cards .card:nth-child(1) a {
   margin: 0;
   color: white;
   text-decoration: none;
   text-align: center;
 }
 
-body main .projects .cards .card img {
+body main .projects .cards .card:nth-child(1) a img {
   margin: 0;
   max-width: 300px;
 }
