@@ -5,6 +5,7 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
+  cursor: url("/Images/cursor.png"), auto;
 
   &::-webkit-scrollbar {
     width: 0.25rem;
