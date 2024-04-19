@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@font-face {
+  font-family: Panchang;
+  src: url("/fonts/Panchang-Regular.ttf");
+}
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: black;
+  background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
   color: white;
   scroll-behavior: smooth;
   cursor: url("/images/cursor.png"), auto;
@@ -38,7 +42,9 @@ body .sidebar a img {
   max-width: 30px;
 }
 body nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px) saturate(100%);
+  -webkit-backdrop-filter: blur(25px) saturate(0%);
+  background-color: rgba(17, 25, 40, 0);
   height: 60px;
   position: fixed;
   top: 0;
@@ -51,6 +57,7 @@ body nav {
 body nav img {
   cursor: pointer;
   max-width: 80px;
+  border-radius: 20px;
 }
 body nav .nav-links {
   width: 100%;
@@ -75,21 +82,118 @@ body nav .nav-links ul li a:hover {
 }
 body main {
   margin-top: 80px;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body main .info {
-  margin-left: 40px;
-  margin-right: 40px;
+  width: 100%;
   font-size: 40px;
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   place-content: center;
+}
+body main .info h1 {
+  font-family: "Panchang";
+}
+body main .info img {
+  width: 200px;
+  border-radius: 50%;
+}
+body main .info .languages {
+  margin: 30px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body main .info .languages p {
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  border-radius: 6px;
+  -webkit-clip-path: polygon(10px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 10px);
+          clip-path: polygon(10px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 10px);
+  background: rgba(182, 234, 218, 0.3098039216);
+  padding: 16px 40px;
+  margin: 10px 10px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: -webkit-clip-path 300ms;
+  transition: clip-path 300ms;
+  transition: clip-path 300ms, -webkit-clip-path 300ms;
+}
+body main .info .languages p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: rgba(196, 214, 209, 0.3098039216);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 6px 0;
+  transition: transform 300ms;
+}
+body main .info .languages p:hover {
+  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
+          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
+  background: rgba(176, 205, 197, 0.3098039216);
+}
+body main .info .languages p:hover::after {
+  transform: translate(-100%, -100%);
+}
+body main .info .skills {
+  margin: 30px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body main .info .skills p {
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  border-radius: 6px;
+  -webkit-clip-path: polygon(10px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 10px);
+          clip-path: polygon(10px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 10px);
+  background: rgba(91, 143, 185, 0.2039215686);
+  padding: 16px 40px;
+  margin: 10px 10px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: -webkit-clip-path 300ms;
+  transition: clip-path 300ms;
+  transition: clip-path 300ms, -webkit-clip-path 300ms;
+}
+body main .info .skills p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: rgba(184, 210, 232, 0.2039215686);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 6px 0;
+  transition: transform 300ms;
+}
+body main .info .skills p:hover {
+  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
+          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
+  background: rgba(116, 155, 187, 0.2039215686);
+}
+body main .info .skills p:hover::after {
+  transform: translate(-100%, -100%);
 }
 body main .projects {
   margin-top: 200px;
   text-align: center;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
