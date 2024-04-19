@@ -63,12 +63,13 @@ body nav .nav-links ul {
 }
 body nav .nav-links ul li a {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
   text-decoration: none;
   color: white;
-  transition: all 0.3s;
+  transition: all 0.1s ease-in-out;
 }
 body nav .nav-links ul li a:hover {
+  text-decoration: underline;
   background-color: white;
   color: black;
 }
@@ -102,7 +103,6 @@ body main .projects .cards {
 body main .projects .cards .card {
   margin-left: 40px;
   margin-right: 40px;
-  transition: all 0.5s;
   padding: 0;
   margin-bottom: 40px;
 }
@@ -115,9 +115,10 @@ body main .projects .cards .card:nth-child(1) a {
 body main .projects .cards .card:nth-child(1) a img {
   margin: 0;
   max-width: 300px;
+  transition: all 0.5s;
 }
-body main .projects .cards .card:hover {
-  transform: scale(1.08);
+body main .projects .cards .card:hover img {
+  transform: scale(1.1);
 }
 body main .contact {
   display: flex;
