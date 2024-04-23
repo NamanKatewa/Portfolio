@@ -111,6 +111,7 @@ body main .info .languages {
   justify-content: space-evenly;
 }
 body main .info .languages p {
+  cursor: pointer;
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
@@ -155,6 +156,7 @@ body main .info .skills {
   justify-content: space-evenly;
 }
 body main .info .skills p {
+  cursor: pointer;
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
