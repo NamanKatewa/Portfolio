@@ -31,6 +31,7 @@ body .sidebar {
   top: 40%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 body .sidebar a {
   margin-bottom: 3px;
@@ -69,6 +70,7 @@ body nav .nav-links ul {
   justify-content: space-evenly;
 }
 body nav .nav-links ul li a {
+  scroll-behavior: smooth;
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
@@ -88,7 +90,7 @@ body main {
 }
 body main .info {
   width: 100%;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -198,35 +200,43 @@ body main .projects {
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 body main .projects .cards {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  gap: 80px;
 }
 body main .projects .cards .card {
-  margin-left: 40px;
-  margin-right: 40px;
   padding: 0;
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-body main .projects .cards .card:nth-child(1) a {
+body main .projects .cards .card a {
   margin: 0;
   color: white;
   text-decoration: none;
   text-align: center;
 }
-body main .projects .cards .card:nth-child(1) a img {
+body main .projects .cards .card a img {
   margin: 0;
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
   transition: all 0.5s;
+}
+body main .projects .cards .card #sourcelink {
+  margin: 20px 20px;
 }
 body main .projects .cards .card:hover img {
   transform: scale(1.1);
 }
 body main .contact {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
